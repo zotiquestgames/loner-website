@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://loner.zotiquestgames.com/sitemap.xml
+Sitemap: https://loner-rpg.netlify.app/sitemap.xml
