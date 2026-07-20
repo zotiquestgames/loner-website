@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How To Play — Loner</title>
+<meta name="description" content="Loner is built on a simple cycle: describe what happens, ask questions when the outcome is uncertain, and let the story surprise you.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="How To Play — Loner">
+<meta property="og:description" content="Loner is built on a simple cycle: describe what happens, ask questions when the outcome is uncertain, and let the story surprise you.">
+<meta property="og:url" content="https://loner.zotiquestgames.com/how-to-play.html">
+<meta property="og:site_name" content="Loner">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How To Play — Loner">
+<meta name="twitter:description" content="Loner is built on a simple cycle: describe what happens, ask questions when the outcome is uncertain, and let the story surprise you.">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/nav.js" defer></script>
+<script src="js/oracle-roller.js" defer></script>
+</head>
+<body>
+<div class="page-shell">
+  <header class="site-header">
+    <div class="site-header__row">
+      <a href="index.html" class="site-logo" aria-label="Loner — Home"><img src="assets/logo.svg" alt="Loner" class="site-logo__mark"></a>
+      <div class="site-header__actions">
+        <nav class="site-nav" id="siteNav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="core-rules.html" class="nav-link">Core Rules</a>
+          <a href="how-to-play.html" class="nav-link nav-link--active">How To Play</a>
+          <a href="supplements.html" class="nav-link">Geared Towards Loner</a>
+          <a href="creators-kit.html" class="nav-link">Creator's Kit</a>
+          <a href="community.html" class="nav-link">Community</a>
+          <a href="http://lonersrd.zotiquestgames.com" class="nav-link" target="_blank" rel="noopener">SRD</a>
+          <a href="https://lonerassistant.zotiquestgames.com/" class="nav-link" target="_blank" rel="noopener">Assistant</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">Dark</button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main page-main--md">
+
+    <section class="page-section">
+      <div class="section-header">
+        <div class="section-header__kicker">Play</div>
+        <h1 class="section-header__title">How To Play</h1>
+        <div class="section-header__rule"></div>
+      </div>
+      <p style="margin:0;font-size:var(--size-body-lg);line-height:var(--lh-body)">Loner is built on a simple cycle: describe what happens, ask questions when the outcome is uncertain, and let the story surprise you. Everything comes down to tags and the Oracle.</p>
+    </section>
+
+    <section class="page-section" style="gap:16px">
+      <h2 style="font-family:var(--font-heading);font-weight:800;font-size:var(--size-h2);text-transform:uppercase;letter-spacing:var(--tracking-caps);margin:0">The Basics</h2>
+      <div class="cycle-list">
+        <div class="cycle-step">
+          <div class="cycle-step__n">01</div>
+          <div class="cycle-step__body">
+            <div class="cycle-step__title">Build a Character with Tags</div>
+            <div class="cycle-step__text">Define your protagonist with a few descriptive tags: a Concept, two Skills, a Frailty, some Gear, and a Goal. Tags aren't numbers, just words that matter in play.</div>
+          </div>
+        </div>
+        <div class="cycle-step">
+          <div class="cycle-step__n">02</div>
+          <div class="cycle-step__body">
+            <div class="cycle-step__title">Ask the Oracle Questions</div>
+            <div class="cycle-step__text">Whenever you're unsure what happens, ask the Oracle a Yes/No question and roll two dice against each other. One die represents Chance, the other Risk. The result gives you not only an answer, but often a twist.</div>
+          </div>
+        </div>
+        <div class="cycle-step">
+          <div class="cycle-step__n">03</div>
+          <div class="cycle-step__body">
+            <div class="cycle-step__title">Let the Story Emerge</div>
+            <div class="cycle-step__text">Each scene flows naturally into the next. Tags provide context, the Oracle introduces surprises, and together they build a story that could never have been written ahead of time.</div>
+          </div>
+        </div>
+      </div>
+      <div class="tag-row">
+        <span class="tag-chip"><span class="tag-chip__kind">Skill</span><span>Concept</span></span>
+        <span class="tag-chip"><span class="tag-chip__kind">Skill</span><span>Skill</span></span>
+        <span class="tag-chip"><span class="tag-chip__kind">Frailty</span><span>Frailty</span></span>
+        <span class="tag-chip"><span class="tag-chip__kind">Gear</span><span>Gear</span></span>
+        <span class="tag-chip"><span class="tag-chip__kind">Detail</span><span>Goal</span></span>
+      </div>
+    </section>
+
+    <section class="try-box">
+      <div class="eyebrow">Try It</div>
+      <h3 style="font-family:var(--font-heading);font-weight:800;font-size:var(--size-h3);text-transform:uppercase;letter-spacing:var(--tracking-caps);margin:0">Ask the Oracle</h3>
+      <p style="margin:0;font-size:var(--size-body);line-height:var(--lh-body);color:var(--text-secondary)">Phrase a yes/no question, then roll the Chance Die against the Risk Die.</p>
+      <div class="try-box__row">
+        <button id="oracleRollButton" type="button" class="btn btn--primary">Ask the Oracle</button>
+        <div id="oracleRollResult" class="oracle-roll-result">
+          <div class="dice-slot">
+            <span class="dice-glyph dice-glyph--lg" data-role="chance">–</span>
+            <span class="dice-slot__label">Chance</span>
+          </div>
+          <span class="dice-vs">vs</span>
+          <div class="dice-slot">
+            <span class="dice-glyph dice-glyph--lg dice-glyph--accent" data-role="risk">–</span>
+            <span class="dice-slot__label">Risk</span>
+          </div>
+          <span class="oracle-badge">
+            <span class="oracle-badge__result" data-role="result">Yes</span>
+            <span class="oracle-badge__twist" data-role="twist" style="display:none">+1 Twist</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <h2 style="font-family:var(--font-heading);font-weight:800;font-size:var(--size-h2);text-transform:uppercase;letter-spacing:var(--tracking-caps);margin:0">Learn More</h2>
+      <p style="margin:0;font-size:var(--size-body);line-height:var(--lh-body);color:var(--text-secondary)">Once you've played a session or two, you may want to dig deeper. These guides expand the core experience without adding complexity:</p>
+      <div class="detail-list">
+        <div class="detail-row" style="flex-direction:column;gap:6px">
+          <div class="cycle-step__title">Character Builder's Guide</div>
+          <div class="detail-row__body">Tools for evolving identity, weaving lifepaths, and shaping relationships with allies, rivals, and nemeses.</div>
+        </div>
+        <div class="detail-row" style="flex-direction:column;gap:6px">
+          <div class="cycle-step__title">World Builder's Guide</div>
+          <div class="detail-row__body">Frameworks for building reactive settings, factions, and story hooks that push back against your protagonist.</div>
+        </div>
+      </div>
+      <a href="core-rules.html" class="btn btn--outline" style="align-self:flex-start">View The Books</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__links">
+      <a href="http://lonersrd.zotiquestgames.com" target="_blank" rel="noopener">SRD</a>
+      <a href="https://lonerassistant.zotiquestgames.com/" target="_blank" rel="noopener">Assistant App</a>
+      <a href="community.html">Community</a>
+    </div>
+    <div class="site-footer__copy">Loner © 2021-2026 by Roberto Bisceglie is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</div>
+  </footer>
+</div>
+</body>
+</html>
